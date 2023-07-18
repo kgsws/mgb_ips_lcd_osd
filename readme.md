@@ -8,7 +8,7 @@ Pinout, SPI commands and stuff is based on **reverse engineering** of this speci
 
 If you decide to use this firmware i assume you are willing to take **risk of bricking** your IPS LCD kit!
 
-<span style="color:red;font-weight: bold">Currently, there is no way to return to the original firmware!</span>
+**Currently, there is no way to return to the original firmware!**
 
 **Pay close attention to the PCB board photo i provided!**
 
