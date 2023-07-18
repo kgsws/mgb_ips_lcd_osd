@@ -1,0 +1,10 @@
+*.asm
+*.ihx
+*.lk
+*.lst
+*.map
+*.mem
+*.rel
+*.rst
+*.sym
+gfx_osd.h

@@ -1,0 +1,3 @@
+
+void osd_init();
+
