@@ -38,6 +38,18 @@ It is important to set `program_eeprom_split`!
 
 Connect `Tx -> Rx` and `Rx -> Tx`. Use only 3V3 UART adapter!
 
+## How to enter the menu
+
+Touch both touch inputs at the same time.
+
+### How to leave the menu
+
+Go to main menu and touch both touch inputs at the same time.
+
+## Input mapping
+
+Technically, it should be possible to rewire three available inputs (A, B and select) to different keys.
+
 ## Icons
 
 Graphics, including every text, is in `images` directory. These PNG files automaticaly are converted when building using make.
