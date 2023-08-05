@@ -38,6 +38,16 @@ It is important to set `program_eeprom_split`!
 
 Connect `Tx -> Rx` and `Rx -> Tx`. Use only 3V3 UART adapter!
 
+## SPI byte transfer
+
+Timing between SPI bytes is forced by the code. It is possible that current values won't work for you.
+
+In such case just change values in each `spi_wait` call. Or add something like `ttt += 4` into `spi_wait`.
+
+Find out values that work for you but do not slow OSD too much.
+
+Function `spi_wait` is in file `spicmd.c`.
+
 ## How to enter the menu
 
 Touch both touch inputs at the same time.

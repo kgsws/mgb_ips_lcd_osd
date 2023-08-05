@@ -6,6 +6,13 @@
 #include "spicmd.h"
 #include "gfx.h"
 
+// NOTE:
+// Timing between SPI bytes is forced by the code.
+// It is possible that current values won't work for you.
+// In such case just change values in each 'spi_wait' call.
+// (or add something like 'ttt += 4' into 'spi_wait')
+// Find out values that work for you but do not slow OSD too much.
+
 __xdata spi_cmd_t spicmd;
 
 //
