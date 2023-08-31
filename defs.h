@@ -71,3 +71,8 @@ extern __xdata void (*ticker)();
 #define ADC_BL_RAW_LO	0x6500
 #define ADC_BL_RAW_HI	0xDB00
 
+// OSD address offset
+// use if your image appears shifted
+// NOTE: offset is in bytes and not pixels
+//#define SPI_OSDADDR_OFFSET	-2
+

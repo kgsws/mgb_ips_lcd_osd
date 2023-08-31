@@ -86,6 +86,10 @@ void spicmd_osd_line(uint8_t y, uint8_t color)
 
 	addr = (uint16_t)y * OSD_STRIDE;
 
+#ifdef SPI_OSDADDR_OFFSET
+	addr += (uint16_t)SPI_OSDADDR_OFFSET;
+#endif
+
 	OUT_CS = 0;
 
 	SPDAT = 0x0D;

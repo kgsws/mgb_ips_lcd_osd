@@ -79,6 +79,10 @@ void gfx_show_logo(uint8_t y)
 	spicmd.cmd = 0x0D;
 	spicmd.osd.address = (uint16_t)y * OSD_STRIDE;
 
+#ifdef SPI_OSDADDR_OFFSET
+	spicmd.osd.address += (uint16_t)SPI_OSDADDR_OFFSET;
+#endif
+
 	for( ; y < OSD_HEIGHT; y++)
 	{
 		spicmd_xbm_line(data);
@@ -144,6 +148,10 @@ void gfx_show_icon(int16_t x, int8_t y, uint8_t idx)
 	}
 
 	stride /= 4;
+
+#ifdef SPI_OSDADDR_OFFSET
+	spicmd.osd.address += (uint16_t)SPI_OSDADDR_OFFSET;
+#endif
 
 	for( ; y < ye; y++)
 	{
