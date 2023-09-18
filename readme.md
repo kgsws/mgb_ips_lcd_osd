@@ -48,6 +48,12 @@ Find out values that work for you but do not slow OSD too much.
 
 Function `spi_wait` is in file `spicmd.c`.
 
+## OSD RAM offset
+
+There seems to be possible difference with different FPGAs.
+
+If you find that your image is shifted to the side a bit, use `SPI_OSDADDR_OFFSET` compile option.
+
 ## How to enter the menu
 
 Touch both touch inputs at the same time.
@@ -76,7 +82,7 @@ Beware, `logo.png` should only use two colors!
 
 You can use original `contrast` pot to control `brightness` but it **requires** extra **hardware modification**.
 
-If you don't have this modification make sure to disable `ADC_BACKLIGHT` compile option!
+If you don't have this modification disable `ADC_BACKLIGHT` compile option!
 
 This modification is single wire and single capacitor, about 1uF.
 
